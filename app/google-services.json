@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "169688475368",
+    "project_id": "mimascotavacunada-785b6",
+    "storage_bucket": "mimascotavacunada-785b6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169688475368:android:504c4502b5a19eb4de4b5d",
+        "android_client_info": {
+          "package_name": "co.edu.upb.petdar"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169688475368-mgd58r84hjqq280lqllm3j99o882gemp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_NUW-lox5LB_XCjRyhCFWhLxC32np85I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169688475368-mgd58r84hjqq280lqllm3j99o882gemp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:169688475368:android:3f218a19014436a5de4b5d",
+        "android_client_info": {
+          "package_name": "co.edu.upb.petdarapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "169688475368-mgd58r84hjqq280lqllm3j99o882gemp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD_NUW-lox5LB_XCjRyhCFWhLxC32np85I"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "169688475368-mgd58r84hjqq280lqllm3j99o882gemp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
