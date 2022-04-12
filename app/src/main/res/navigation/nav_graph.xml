@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="co.edu.upb.petdarapp.Vacunas"
+        android:name="co.edu.upb.petdarapp.ListaVacuna"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/citas">
 

@@ -19,6 +19,7 @@
     <string name="ttxb_vacuna">Vacuna</string>
     <string name="ttxb_vacunador">Vacunador</string>
     <string name="ttxb_pfecha">Próxima vacunación</string>
+    <string name="ttxb_titulo3">Sus vacunas</string>
 
 
 </resources>
