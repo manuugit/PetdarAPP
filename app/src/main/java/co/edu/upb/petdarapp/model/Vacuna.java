@@ -1,16 +1,17 @@
 package co.edu.upb.petdarapp.model;
 
 import java.util.Date;
+import java.util.UUID;
 
 public class Vacuna {
-    private String uid;
+    private UUID uid;
     private Mascota mascota;
     private String fecha;
     private String nombre;
     private String vacunador;
     private String proxima_fecha;
 
-    public Vacuna(String uid, Mascota mascota, String fecha, String nombre, String vacunador, String proxima_fecha) {
+    public Vacuna(UUID uid, Mascota mascota, String fecha, String nombre, String vacunador, String proxima_fecha) {
         this.uid = uid;
         this.mascota = mascota;
         this.fecha = fecha;
@@ -19,11 +20,11 @@ public class Vacuna {
         this.proxima_fecha = proxima_fecha;
     }
 
-    public String getUid() {
+    public UUID getUid() {
         return uid;
     }
 
-    public void setUid(String uid) {
+    public void setUid(UUID uid) {
         this.uid = uid;
     }
 

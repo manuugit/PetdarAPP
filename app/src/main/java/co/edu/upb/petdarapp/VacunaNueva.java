@@ -1,7 +1,10 @@
 package co.edu.upb.petdarapp;
 
+import android.app.DatePickerDialog;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
+import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,17 +15,18 @@ import java.util.UUID;
 import co.edu.upb.petdarapp.model.Mascota;
 import co.edu.upb.petdarapp.model.Vacuna;
 
-public class Vacuna_nueva extends AppCompatActivity {
+public class VacunaNueva extends AppCompatActivity {
 
-    EditText txbmasc, txbesp, txbf, txbproxf, txbvac, txbvacunador;
-    Button btn_av = findViewById(R.id.btn_agregarV);
-    FirebaseDatabase db;
-    DatabaseReference db_reference;
-
+    private EditText txbmasc, txbesp, txbf, txbproxf, txbvac, txbvacunador;
+    private Button btn_av;
+    private FirebaseDatabase db;
+    private DatabaseReference db_reference;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vacuna_nueva);
+        btn_av = findViewById(R.id.btn_agregarV);
+        Toast.makeText(getApplicationContext(), ":(", Toast.LENGTH_SHORT).show();
 
         txbmasc = findViewById(R.id.txb_nombre_mascota);
         txbesp = findViewById(R.id.txb_especie);
@@ -30,6 +34,20 @@ public class Vacuna_nueva extends AppCompatActivity {
         txbvac = findViewById(R.id.txb_vacuna);
         txbvacunador = findViewById(R.id.txb_vacunador);
         txbproxf = findViewById(R.id.txb_prox_fecha);
+
+        EditText fecha1 = txbf;
+        fecha1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                switch(view.getId()){
+                    case R.id.txb_fecha_vacuna:{
+                        showDatePickerDialog(txbf);
+                        break;
+                    }
+
+                }
+            }
+        });
 
         String nombre = txbmasc.getText().toString();
         String especie = txbesp.getText().toString();
@@ -54,7 +72,18 @@ public class Vacuna_nueva extends AppCompatActivity {
 
         });
     }
+    private void showDatePickerDialog(EditText element) {
+        DatePickerFragment newFragment = DatePickerFragment.newInstance(new DatePickerDialog.OnDateSetListener() {
+            @Override
+            public void onDateSet(DatePicker datePicker, int year, int month, int day) {
+                // +1 because January is zero
+                final String selectedDate = day + " / " + (month+1) + " / " + year;
+                element.setText(selectedDate);
+            }
+        });
+        newFragment.show(getSupportFragmentManager(), "datePicker");
 
+    }
     private void initFirebase(){
         FirebaseApp.initializeApp(this);
         db = FirebaseDatabase.getInstance();

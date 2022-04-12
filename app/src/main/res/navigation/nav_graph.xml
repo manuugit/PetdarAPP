@@ -7,7 +7,7 @@
 
     <fragment
         android:id="@+id/FirstFragment"
-        android:name="co.edu.upb.petdarapp.FirstFragment"
+        android:name="co.edu.upb.petdarapp.VacunaNueva"
         android:label="@string/first_fragment_label"
         tools:layout="@layout/vacuna_nueva">
 
@@ -17,7 +17,7 @@
     </fragment>
     <fragment
         android:id="@+id/SecondFragment"
-        android:name="co.edu.upb.petdarapp.SecondFragment"
+        android:name="co.edu.upb.petdarapp.Vacunas"
         android:label="@string/second_fragment_label"
         tools:layout="@layout/citas">
 

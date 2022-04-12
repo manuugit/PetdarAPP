@@ -7,6 +7,18 @@
     <string name="next">Next</string>
     <string name="previous">Previous</string>
 
-    <string name="hello_first_fragment">Hello first fragment</string>
-    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+    <string name="tbtn_vacunacion">Vacunación</string>
+    <string name="tbtn_citas">Citas</string>
+    <string name="tbtn_salir">Salir</string>
+    <string name="tbtn_agregarV">Agregar</string>
+    <string name="ttxb_titulo">Datos de la mascota</string>
+    <string name="ttxb_nombre">Nombre</string>
+    <string name="ttxb_especie">Especie</string>
+    <string name="ttxb_titulo2">Agregar vacuna</string>
+    <string name="ttxb_fecha">Fecha</string>
+    <string name="ttxb_vacuna">Vacuna</string>
+    <string name="ttxb_vacunador">Vacunador</string>
+    <string name="ttxb_pfecha">Próxima vacunación</string>
+
+
 </resources>
