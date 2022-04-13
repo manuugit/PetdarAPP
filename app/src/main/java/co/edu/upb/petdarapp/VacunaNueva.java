@@ -1,13 +1,17 @@
 package co.edu.upb.petdarapp;
 
 import android.app.DatePickerDialog;
+import android.content.Intent;
 import android.os.Bundle;
+import android.os.Parcelable;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
+
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.firebase.FirebaseApp;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
@@ -31,7 +35,6 @@ public class VacunaNueva extends AppCompatActivity {
         FirebaseApp.initializeApp(this);
         db = FirebaseDatabase.getInstance();
         db_reference = db.getReference();
-
     }
 
     private void validation(String n, String e, String f, String v, String vac, String p) {
@@ -111,7 +114,7 @@ public class VacunaNueva extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.vacuna_nueva);
         btn_av = findViewById(R.id.btn_agregarV);
-        Toast.makeText(getApplicationContext(), ":(", Toast.LENGTH_SHORT).show();
+        Toast.makeText(getApplicationContext(), ":)", Toast.LENGTH_SHORT).show();
 
         txbmasc = findViewById(R.id.txb_nombre_mascota);
         txbesp = findViewById(R.id.txb_especie);
@@ -149,6 +152,15 @@ public class VacunaNueva extends AppCompatActivity {
                 limpiar();
             }
 
+        });
+
+        final FloatingActionButton actionhome = (FloatingActionButton) findViewById(R.id.btn_home2);
+        actionhome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent in = new Intent(VacunaNueva.this, MainActivity.class);
+                startActivity(in);
+            }
         });
     }
 }

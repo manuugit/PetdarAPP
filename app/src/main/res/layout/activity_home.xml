@@ -7,76 +7,52 @@
     android:textAlignment="center"
     tools:context=".MainActivity">
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/btn_home"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentBottom="true"
-        android:layout_gravity="bottom|end"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="17dp"
-        android:contentDescription="@string/app_name"
-        app:srcCompat="@android:drawable/ic_dialog_email" />
-
     <Button
         android:id="@+id/btn_vacunacion"
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
-        android:layout_above="@+id/btn_citas"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="15dp"
-        android:layout_marginEnd="15dp"
-        android:layout_marginBottom="25dp"
-        android:text="@string/tbtn_vacunacion" />
-
-    <Button
-        android:id="@+id/btn_citas"
-        android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="100dp"
         android:layout_above="@+id/btn_salir"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="15dp"
         android:layout_marginEnd="15dp"
-        android:layout_marginBottom="25dp"
-        android:text="@string/tbtn_citas" />
+        android:layout_marginBottom="20dp"
+        android:text="@string/tbtn_vacunacion" />
 
     <Button
         android:id="@+id/btn_salir"
         android:layout_width="wrap_content"
-        android:layout_height="70dp"
+        android:layout_height="99dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="11dp"
-        android:layout_marginEnd="18dp"
-        android:layout_marginBottom="95dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginEnd="14dp"
+        android:layout_marginBottom="25dp"
         android:text="@string/tbtn_salir" />
 
     <ImageView
         android:id="@+id/img_logo"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="282dp"
+        android:layout_height="176dp"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
-        android:layout_marginStart="105dp"
-        android:layout_marginTop="95dp"
-        android:layout_marginEnd="105dp"
+        android:layout_marginStart="70dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="70dp"
         android:contentDescription="@string/app_name"
-        tools:srcCompat="@tools:sample/avatars" />
+        android:src="@mipmap/icono_huella" />
 
     <TextView
         android:id="@+id/textView4"
         android:layout_width="134dp"
         android:layout_height="wrap_content"
-        android:layout_below="@+id/img_logo"
         android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="105dp"
-        android:layout_marginTop="25dp"
+        android:layout_marginTop="225dp"
         android:layout_marginEnd="105dp"
         android:capitalize="words"
         android:minHeight="48dp"

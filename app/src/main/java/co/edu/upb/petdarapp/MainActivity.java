@@ -16,11 +16,24 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
 
         Button btn_vac = findViewById(R.id.btn_vacunacion);
+        Button btn_salida = findViewById(R.id.btn_salir);
+
         btn_vac.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent i = new Intent(MainActivity.this, VistaVacuna.class);
                 startActivity(i);
+            }
+        });
+
+        btn_salida.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                finish();
+                Intent intent = new Intent(Intent.ACTION_MAIN);
+                intent.addCategory(Intent.CATEGORY_HOME);
+                intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+                startActivity(intent);
             }
         });
     }

@@ -20,6 +20,9 @@ public class Vacuna {
         this.proxima_fecha = proxima_fecha;
     }
 
+    public Vacuna() {
+    }
+
     public UUID getUid() {
         return uid;
     }
@@ -66,6 +69,15 @@ public class Vacuna {
 
     public void setProxima_fecha(String proxima_fecha) {
         this.proxima_fecha = proxima_fecha;
+    }
+
+    @Override
+    public String toString() {
+        return "Vacuna{" + ", fecha='" + fecha + '\'' +
+                ", nombre='" + nombre + '\'' +
+                ", vacunador='" + vacunador + '\'' +
+                ", proxima_fecha='" + proxima_fecha + '\'' +
+                '}';
     }
 }
 
