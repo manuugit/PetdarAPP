@@ -14,7 +14,7 @@
     <string name="ttxb_titulo">Datos de la mascota</string>
     <string name="ttxb_nombre">Nombre</string>
     <string name="ttxb_especie">Especie</string>
-    <string name="ttxb_titulo2">Agregar vacuna</string>
+    <string name="ttxb_titulo2">Datos de la vacuna</string>
     <string name="ttxb_fecha">Fecha</string>
     <string name="ttxb_vacuna">Vacuna</string>
     <string name="ttxb_vacunador">Vacunador</string>

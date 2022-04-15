@@ -17,10 +17,13 @@
         <entry key="..\:/Users/manu2/AndroidStudioProjects/petdarApp/app/src/main/res/layout/vacuna_nueva.xml" value="0.16666666666666666" />
         <entry key="..\:/Users/manu2/AndroidStudioProjects/petdarApp/app/src/main/res/layout/vacunas.xml" value="0.4466666666666667" />
         <entry key="..\:/Users/manu2/AndroidStudioProjects/petdarApp/app/src/main/res/menu/menu_main.xml" value="0.1796875" />
+        <entry key="..\:/Users/user/Documents/Semestre 7/Apps Moviles/PetdarAPP/app/src/main/res/layout/activity_home.xml" value="0.18802083333333333" />
+        <entry key="..\:/Users/user/Documents/Semestre 7/Apps Moviles/PetdarAPP/app/src/main/res/layout/vacuna_nueva.xml" value="0.33" />
+        <entry key="..\:/Users/user/Documents/Semestre 7/Apps Moviles/PetdarAPP/app/src/main/res/layout/vacunas.xml" value="0.33" />
       </map>
     </option>
   </component>
-  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>
   <component name="ProjectType">

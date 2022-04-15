@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.988"
-        app:srcCompat="@drawable/ic_home" />
+        app:srcCompat="@drawable/ic_launcher_background" />
 
 
     <ImageView
@@ -122,11 +122,11 @@
         android:layout_marginStart="15dp"
         android:layout_marginTop="10dp"
         android:layout_marginEnd="15dp"
+        android:clickable="true"
         android:ems="10"
+        android:focusable="false"
         android:hint="@string/ttxb_fecha"
         android:inputType="date"
-        android:clickable="true"
-        android:focusable="false"
         android:minHeight="48dp"
         android:textSize="20sp" />
 
