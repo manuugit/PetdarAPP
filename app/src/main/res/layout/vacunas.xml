@@ -47,19 +47,6 @@
         android:hint="@string/ttxb_titulo3"
         android:textSize="20sp" />
 
-    <TextView
-        android:id="@+id/txb_mascota"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_below="@+id/textView3"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentEnd="true"
-        android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
-        android:layout_marginEnd="100dp"
-        android:text="aqui el nombre la mascota"
-        android:textSize="20sp" />
-
     <Button
         android:id="@+id/btn_nav"
         android:layout_width="wrap_content"
@@ -75,28 +62,16 @@
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/lista_vacunas"
         android:layout_width="wrap_content"
-        android:layout_height="230dp"
+        android:layout_height="449dp"
         android:layout_above="@+id/btn_nav"
-        android:layout_below="@+id/txb_mascota"
+        android:layout_below="@+id/textView3"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_marginStart="25dp"
-        android:layout_marginTop="20dp"
+        android:layout_marginTop="24dp"
         android:layout_marginEnd="25dp"
-        android:layout_marginBottom="188dp" >
+        android:layout_marginBottom="12dp">
 
     </androidx.recyclerview.widget.RecyclerView>
-
-    <TextView
-        android:id="@+id/LB_nombre"
-        android:layout_width="293dp"
-        android:layout_height="96dp"
-        android:layout_above="@+id/btn_nav"
-        android:layout_below="@+id/lista_vacunas"
-        android:layout_alignParentStart="true"
-        android:layout_marginStart="0dp"
-        android:layout_marginTop="-130dp"
-        android:layout_marginBottom="33dp"
-        android:text="text" />
 
 </RelativeLayout>

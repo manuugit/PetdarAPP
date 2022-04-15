@@ -1,14 +1,19 @@
 package co.edu.upb.petdarapp;
 
 import android.app.DatePickerDialog;
+import android.content.Context;
 import android.content.Intent;
+import android.os.Build;
 import android.os.Bundle;
 import android.os.Parcelable;
+import android.telephony.TelephonyManager;
 import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
 import android.widget.Toast;
+
+import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
@@ -19,6 +24,8 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.Calendar;
 import java.util.Locale;
 import java.util.UUID;
+import java.util.concurrent.ThreadLocalRandom;
+
 import co.edu.upb.petdarapp.model.Mascota;
 import co.edu.upb.petdarapp.model.Vacuna;
 
@@ -109,6 +116,7 @@ public class VacunaNueva extends AppCompatActivity {
         });
     }
 
+    @RequiresApi(api = Build.VERSION_CODES.O)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -146,8 +154,9 @@ public class VacunaNueva extends AppCompatActivity {
             }
             else{
                 Mascota m = new Mascota(nombre, especie);
-                Vacuna vacuna_nueva = new Vacuna(UUID.randomUUID(),m, fecha,vacuna, vacunador, prox );
-                db_reference.child("Vacuna").child(vacuna_nueva.getUid().toString()).setValue(vacuna_nueva);
+                int randomNum = ThreadLocalRandom.current().nextInt(100, 999 + 1);
+                Vacuna vacuna_nueva = new Vacuna(UUID.randomUUID().toString(),m, fecha,vacuna, vacunador, prox );
+                db_reference.child("Vacuna").child(vacuna_nueva.getId()).setValue(vacuna_nueva);
                 Toast.makeText(getApplicationContext(), "Se agregó la vacuna", Toast.LENGTH_SHORT).show();
                 limpiar();
             }

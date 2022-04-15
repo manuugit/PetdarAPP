@@ -9,6 +9,10 @@ public class Mascota {
         this.especie = especie;
     }
 
+    public Mascota(){
+
+    }
+
     public String getNombre() {
         return nombre;
     }

@@ -1,18 +1,28 @@
 package co.edu.upb.petdarapp.model;
 
+import android.content.Context;
+import android.os.Build;
+import android.telephony.TelephonyManager;
+
+import androidx.annotation.RequiresApi;
+
 import java.util.Date;
 import java.util.UUID;
 
 public class Vacuna {
-    private UUID uid;
-    private Mascota mascota;
-    private String fecha;
-    private String nombre;
-    private String vacunador;
-    private String proxima_fecha;
+    public String id;
+    public Mascota mascota;
+    public String fecha;
+    public String nombre;
+    public String vacunador;
+    public String proxima_fecha;
 
-    public Vacuna(UUID uid, Mascota mascota, String fecha, String nombre, String vacunador, String proxima_fecha) {
-        this.uid = uid;
+    public Vacuna() {
+
+    }
+
+    public Vacuna(String id, Mascota mascota, String fecha, String nombre, String vacunador, String proxima_fecha) {
+        this.id = id;
         this.mascota = mascota;
         this.fecha = fecha;
         this.nombre = nombre;
@@ -20,15 +30,11 @@ public class Vacuna {
         this.proxima_fecha = proxima_fecha;
     }
 
-    public Vacuna() {
+    public String getId() {
+        return id;
     }
 
-    public UUID getUid() {
-        return uid;
-    }
-
-    public void setUid(UUID uid) {
-        this.uid = uid;
+    public void setId() {
     }
 
     public Mascota getMascota() {
